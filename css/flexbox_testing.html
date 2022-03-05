@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Testing</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .bg-grey{
+        background-color: grey;
+    }
+    .bg-skyblue{
+        background-color: skyblue;
+    }
+    .bg-orange{
+        background-color:orange;
+    }
+    .one{
+        height: 100vh;
+        background-color: wheat;
+        display: flex;
+    }
+    .part{
+        flex-grow: 1;
+    }
+    .part.right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .two{
+        display: flex;
+        margin:auto;
+        justify-content: space-between;
+        margin-top: -90px;
+        width: 900px;
+    }
+    .two-part{
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        background-color:white;
+        box-shadow: 0 0 5px black;
+    }
+    .third{
+        width: 900px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .third-part{
+        width: 500px;
+        text-align: center; 
+    }
+    .four,.five{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .five{
+        flex-flow: row-reverse wrap;
+    }
+    .four-part,.five-part{
+        width:450px;
+        margin: 0 30px;
+    }
+    .five-part{
+        text-align: right;
+    }
+
+    @media screen and (max-width:480px){
+        .one,.two,.three,.four,.five{
+            flex-direction: column;
+        }
+        .third,.two{
+            align-items: center;
+        }
+        .div,.section{
+            max-width:100% !important;
+        }
+    }
+   
+</style>
+<body>
+
+
+    <section class="one">
+        <div class="part left bg-grey"></div>
+        <div class="part right bg-skyblue">
+            <div class="left-inner" style="width:300px;">
+                <h1>Hello world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="two-part">
+            <h1>One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+        </div>
+        <div class="two-part">
+            <h1>Two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+            
+        </div>
+        <div class="two-part">
+            <h1>Three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+            
+        </div>
+    </section>
+
+    <div class="third">
+        <div class="third-part">
+            <h1>One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+
+        </div>
+    </div>
+
+    <div class="four">
+        <img width = "270px" height="270px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAM__9nH4T5Y8YZ5_irLBSaAUx3NVl5tLkw&usqp=CAU" alt="">
+        <div class="four-part">
+            <h1>One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+
+        </div>
+    </div>
+
+    <div class="five">
+        <img width = "270px" height="270px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAM__9nH4T5Y8YZ5_irLBSaAUx3NVl5tLkw&usqp=CAU" alt="">
+        <div class="five-part">
+            <h1>One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cum sapiente fuga, quasi repudiandae corrupti quos nesciunt dicta vel suscipit nulla pariatur non sit inventore eum at animi totam ad.</p>
+
+        </div>
+    </div>
+</body>
+</html>

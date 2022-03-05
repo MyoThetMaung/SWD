@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;              /*for horizontal but include space*/
+        align-items: center;                        /*for vertical*/
+        align-content: space-around;                /*for vertical but include space*/
+        align-content:flex;
+    }
+    .col{
+        border: 1px solid black;
+        padding: 50px;
+        background-color: grey;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>First column</h2>
+            <p>hello world</p>
+        </div>
+        <div class="col">
+            <h2>Second column</h2>
+            <p>Good morning</p>
+        </div>
+        <div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div>
+        <div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div>
+        <div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div>
+        <div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div>
+        <div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div><div class="col">
+            <h2>Third column</h2>
+            <p>Good night</p>
+        </div>
+    </div>
+</body>
+</html>
